@@ -7,7 +7,7 @@ class NewBoxForm extends Component {
         this.state = {
             height: "",
             width: "",
-            bg_color: ""
+            bg_color: "black"
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,6 +21,7 @@ class NewBoxForm extends Component {
 
     handleSubmit(evt) {
         evt.preventDefault();
+        this.props.addBox(this.state);
         this.setState({
             height: "",
             width: "",
