@@ -6,8 +6,10 @@ class Box extends Component {
     static defaultProps = {
         height: 100,
         width: 100,
-        bg_color: "black"
+        bg_color: "#000000",
+        id: ""
     }
+
     render() {
         const boxStyle = {
             width: this.props.width,
@@ -16,7 +18,7 @@ class Box extends Component {
         }
         return (
             <div style={boxStyle} className='box'>
-                <button className='btn-remove'>x</button>
+                <button onClick={this.props.removeBox} className='btn-remove'>x</button>
             </div>
         );
     }

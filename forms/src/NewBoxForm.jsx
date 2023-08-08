@@ -7,7 +7,8 @@ class NewBoxForm extends Component {
         this.state = {
             height: "",
             width: "",
-            bg_color: "black"
+            bg_color: "#000000",
+            id: ""
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,7 +26,7 @@ class NewBoxForm extends Component {
         this.setState({
             height: "",
             width: "",
-            bg_color: ""
+            bg_color: "#000000"
         })
     }
 
