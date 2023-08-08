@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form_row {
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 150px;
+}
